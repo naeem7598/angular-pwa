@@ -1,0 +1,7 @@
+@for( msg of messages ; track msg.type){
+  <div  class="toast" [ngClass]="msg.type">
+    {{ msg.text }}
+    <button (click)="remove(msg)">✖</button>
+  </div>
+}
+

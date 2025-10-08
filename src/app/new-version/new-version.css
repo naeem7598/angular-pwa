@@ -1,0 +1,68 @@
+.update-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1976d2;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.update-notification button {
+  margin-left: 10px;
+  background: white;
+  color: #1976d2;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pwa-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* دکمه نصب */
+.install-btn {
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.install-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #43a047, #66bb6a);
+}
+
+/* وضعیت آنلاین / آفلاین */
+p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+p.online {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+}
+
+p.offline {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #c62828;
+}
