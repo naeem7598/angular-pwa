@@ -28,11 +28,14 @@ ng generate --help
 
 ## Building
 
-To build the project run:
+برای اجرای پروژه ابتدا دستور زیر:
+ng build --configuration production
+و سپس
 
-```bash
-ng build
-```
+http-server -p 8080 -c-1 dist/pwa-app/browser 
+
+و بعد در مرورگر آدرس http://localhost:8080/
+
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
