@@ -30,7 +30,10 @@ ng generate --help
 
 برای اجرای پروژه ابتدا دستور زیر:
 ng build --configuration production
-و سپس
+و سپس پکیج http-server  را با دستور زیر نصب کنید
+
+npm install -g http-server
+ 
 
 http-server -p 8080 -c-1 dist/pwa-app/browser 
 
